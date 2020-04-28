@@ -1,0 +1,351 @@
+.pagamento-container {
+    width: 100%;
+    /* max-width: 1120px; */
+    height: 100vh;
+    margin: 0 auto;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+
+  .content-top-mobile{
+    display: none;
+  }
+  
+  .pagamento-container .content {
+  
+    width: 1024px;
+    padding: 0px;
+    background: #FFFFFF;
+    box-shadow: 0 0 2px rgb(0, 0, 0,0.4);   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+/* ---------------------------------------- back-linkPagamento --------------------------- */
+  
+.back-linkPagamento{
+  
+    padding-top: 11px;
+    padding-left: 64px;  
+    font-size: 13px;
+    letter-spacing: -0.01px;
+    color: #FFFFFF; 
+    
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: opacity 0.2s;
+}
+.back-linkPagamento {
+    opacity: 0.8;
+} 
+
+/* ---------------------------------------- content-text --------------------------- */
+
+.pagamento-container .content .content-text {
+    
+padding-top: 45px;
+padding-left: 64px;
+display: flex;
+
+}
+  .pagamento-container .content .content-text span{  
+    padding-left: 17px;
+    font: Bold 20px Verdana;
+    letter-spacing: 0.99px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+
+/* ---------------------------------------- .content-form  --------------------------- */
+
+  .pagamento-container .content .content-form {  
+  
+    padding-left: 160px;
+    height: 523px;
+  
+    }
+  
+/* ---------------------------------------- content top --------------------------- */
+
+    .pagamento-container .content .content-top {
+  
+      display: flex;
+      align-items: flex-start;      
+      padding-left: 2px;  
+      padding-top: 16px;
+    }
+
+  .pagamento-container .content .content-top img{  
+      width: 22px;
+  }
+
+  .pagamento-container .content .content-top #iconImgtwo{  
+    width: 22px;
+  }
+
+  .pagamento-container .content .content-top svg{  
+    color: #DE4B4B;
+    width: 51px;
+    height: 24px;
+    }
+  
+  .pagamento-container .content .content-top span{  
+    
+    font-size: 13px;
+    letter-spacing: -0.01px;
+    color: #DE4B4B;
+    margin-top: 3px;
+    margin-left: 8px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: opacity 0.2s;
+  }
+
+  .pagamento-container .content .content-top #spanCarrinho{    
+  
+    margin-left: -9px;
+ 
+  }
+
+  /* ---------------------------------------- section --------------------------- */
+
+  .pagamento-container .content section{
+    width: 352px;
+    height: 596px;   
+    background: #DE4B4B 0% 0% no-repeat padding-box;
+  }
+
+  .pagamento-container .content section #cardFront {
+    padding-left: 64px;
+    padding-top: 34px;
+  }
+
+  .pagamento-container .content section #imgVisa {
+    position: absolute;
+    padding-left: 74px;
+    margin-left: 14px;
+    padding-top: 71px;
+    width: 148px;
+    
+  }
+
+  .pagamento-container .content section p {
+    position: absolute;
+    padding-top: 136px;
+    padding-left: 95px;
+    font: 273 24px SFProText;
+    letter-spacing: 4.99px;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 3px #000000B3;
+    opacity: 1.0;
+  }
+
+  .pagamento-container .content section #titular {
+    
+    padding-top: 202px;
+    padding-left: 96px;
+    font: 16px SFProText;
+    letter-spacing: -0.01px;
+  }
+
+  .pagamento-container .content section #dateVal {
+    
+    padding-top: 202px;
+    padding-left: 343px;
+    font: 16px SFProText;
+    letter-spacing: 0.99px;
+  }
+
+  .pagamento-container .content section .cardFilled #numberCard {
+    font: 22px SFProText;
+    letter-spacing: 2.99px;
+    padding-left: 92px;
+  }
+
+  .pagamento-container .content section .cardEmptyRear p {
+    font: 18px SFProText;
+    padding-top: 145px;
+    padding-left: 242px;
+    color: #3C3C3C;
+    letter-spacing: 3.46px;
+    text-shadow: none;
+  }
+
+  .pagamento-container .content section .cardEmptyRear #numberCVVFilled {
+    font: 18px SFProText;
+    padding-top: 143px;
+    padding-left: 242px;
+    color: #3C3C3C;
+    letter-spacing: 3.46px;
+    text-shadow: none;
+  }
+
+  /* ---------------------------------------- form --------------------------- */
+  .pagamento-container .content form{
+  
+    padding-right: 144px; 
+    padding-bottom: 45px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 561px;
+  }
+  
+  .pagamento-container .content form input{
+  
+    margin-top: 12px;
+    padding-left: 2px;
+    height: 51px;
+    padding-top: 18px;
+  }
+
+  .pagamento-container .content form select{
+
+    width: 415px;
+    height: 4rem;
+    font-size: 1rem;
+    padding-top: 30px;
+
+
+	  border: 0px solid #C9C9C9e6;   
+    border-bottom: 1px solid #C9C9C9e6;
+
+    -webkit-appearance:none;
+    
+	  background:url('../../assets/Arrow.png');
+	  background-repeat:no-repeat;
+    background-size: 22px;
+    background-position: right 41px;
+
+    font: 500 17px Verdana; 
+       
+  }
+
+  .pagamento-container .content form .selectRed{
+    border-bottom: 1px solid red;
+  }
+
+  .pagamento-container .content form select option{
+
+    font: 500 17px Verdana;
+  }
+
+    
+  .pagamento-container .content form .input-group{ 
+  
+    display: flex;
+  }
+  
+  .pagamento-container .content form .input-group input + input{
+  
+   margin-left: 8px;
+  
+  }
+
+  .InputCVVred{
+    border-bottom-color: red;
+  }
+  .InputDatered{
+    border-bottom-color: red;
+  }
+
+  .InputNamered{
+    border-bottom-color: red;
+  }
+
+  .InputNumberCardred{
+    border-bottom-color: red;
+  }
+
+  .labelError{
+    top: 67px;
+    font: 400 13px Verdana, sans-serif;
+    color: #EB5757;  
+
+  }
+  
+
+  .pagamento-container .content form .input-group .valInput{
+  
+    width: 181px;
+    margin-right: 17px;
+  }
+
+  .pagamento-container .content form button{
+
+   
+    width: 232px;
+    height: 48px;
+    margin-left: 187px;
+    background:#DE4B4B;
+    border: 0;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font: 500 17px SFProTextRegular;
+    font-weight: 400;
+    margin-top: 55px;
+    display: inline-block;   
+    transition: filter 0.2s;
+
+  }
+
+  .buttonPagamento:hover{
+
+    filter: brightness(90%);
+    
+  } 
+
+  .input-container {
+    position: relative;
+    margin-top: 24px;
+  }
+
+  /* ---------------------------------------- inputs efect--------------------------- */
+
+  input {
+    border: 0;
+    border-bottom: 2px solid #9e9e9e;
+    outline: none;
+    transition: .2s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  label {
+    top: 0;
+    left: 0; right: 0;
+    color: #C9C9C9;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    font-size: 1rem;
+    cursor: text;
+    transition: .2s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  /* Interation */
+
+  input,
+  label {
+    width: 100%;
+    height: 57px;
+    font-size: 1rem;
+    
+  }
+
+  input:valid + label,
+  input:focus-within + label {
+    color: #C9C9C9;
+    font-size: .8rem;
+    top: -30px;
+    
+  }

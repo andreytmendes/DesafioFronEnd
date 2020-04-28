@@ -1,0 +1,241 @@
+
+@media (max-width: 600px){
+
+    .pagamento-container .content .content-form .content-top{
+  
+      display: none;
+    }
+  
+    .back-linkPagamento {
+      display: none;
+    } 
+  
+    .content-top-mobile{
+      width: 360px;
+      height: 61px;
+      display: flex;
+      flex-direction: row;
+    }
+  
+  
+    .pagamento-container .content {
+    
+      width: 360px;
+      height: 725px;
+      padding: 0px;
+     
+      box-shadow: 0 0 2px rgb(0, 0, 0,0.4);   
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+     
+  
+    /* ------------------------------- section------------------------- */
+  
+    .pagamento-container .content section {
+      width: 360px;
+      height: 239px;
+      background: #DE4B4B 0% 0% no-repeat padding-box;
+    }
+  
+    .pagamento-container .content section #cardFront{
+      width: 359px;
+      height: 190px;
+      padding-left: 0px;
+      padding-top: 0px;
+    }
+    .pagamento-container .content section #imgVisa {
+      position: absolute;
+      padding-left: 74px;
+      margin-left: -19px;
+      padding-top: 26px;
+      width: 128px;
+      
+    }
+    .pagamento-container .content section .cardFilled #numberCard {
+      font: 19px SFProText;
+      padding-top: 74px;
+      padding-left: 57px;
+      letter-spacing: 2.99px;
+    }
+    .pagamento-container .content section .cardFilled #titular {
+      font: 12px SFProText;
+      padding-top: 131px;
+      padding-left: 59px;
+      letter-spacing: 0.99px;
+    }
+    .pagamento-container .content section .cardFilled #dateVal {
+      font: 12px SFProText;
+      padding-top: 131px;
+      padding-left: 263px;
+      letter-spacing: 0.99px;
+    }
+  
+    .pagamento-container .content section .cardEmpty #numberCardEmpty {
+      font: 19px SFProText;
+      padding-top: 77px;
+      padding-left: 59px;
+      letter-spacing: 3.99px;
+    }
+    .pagamento-container .content section .cardEmpty #titular {
+      font: 12px SFProText;
+      padding-top: 131px;
+      padding-left: 59px;
+      letter-spacing: 0.99px;
+    }
+    .pagamento-container .content section .cardEmpty #dateVal {
+      font: 12px SFProText;
+      padding-top: 131px;
+      padding-left: 263px;
+      letter-spacing: 0.99px;
+    }
+  
+    .pagamento-container .content section .content-text img{
+      width: 40px;
+      padding-bottom: 14px;
+      padding-left: 0px;
+      padding-top: 0px;
+      height: 53px;
+    }
+  
+    .pagamento-container .content section .content-top-mobile span {
+      font: 500 13px Verdana;
+      letter-spacing: -0.01px;
+      color: #FFFFFF;
+    }
+    .pagamento-container .content section .content-top-mobile svg {
+      color: #ffff !important;
+      padding-top: 1px;
+      fill: none;
+      stroke-width: 2px; 
+      width: 42px;
+      height: 109px;
+    }
+  
+  
+  
+    .pagamento-container .content section .content-top-mobile #etapa {
+      padding-top: 48px;
+      padding-left: 99px;
+      font: 600 13px Verdana;
+      letter-spacing: 1px;    
+    }
+  
+    .pagamento-container .content section .content-top-mobile #etapaAfter {
+      padding-top: 48px;
+      opacity: 0.9;
+      padding-left: 4px;  
+    }
+  
+    .pagamento-container .content section .cardEmptyRear p {
+      font: 16px SFProText;
+      padding-top: 95px;
+      padding-left: 177px;
+      letter-spacing: 3.46px;   
+    }
+  
+    .pagamento-container .content section .cardEmptyRear #numberCVVFilled {
+      font: 16px SFProText;
+      padding-top: 91px;
+      padding-left: 177px;
+      letter-spacing: 1.46px; 
+    }
+  
+    
+  
+    /* ------------------------------- content-text------------------------- */
+  
+    .pagamento-container .content .content-text {
+      
+      width: 290px;
+      padding-top: 34px;
+      padding-left: 72px;
+      
+    }  
+  
+    .pagamento-container .content .content-text span {
+  
+      font: Bold 16px Verdana;
+  
+    }
+  
+    /* ------------------------------- form------------------------- */
+    
+    .pagamento-container .content form {
+      width: 418px;
+      padding-top: 41px;
+    }
+  
+    .pagamento-container .content form button {
+      width: 100%;
+      margin-left: 1px;
+      margin-top: 38px;
+    }
+  
+    .pagamento-container .content form .input-container  input {
+      margin-top: 9px;
+      padding-top: 18px;
+    }
+  
+    .pagamento-container .content .content-form form .input-container {
+      margin-top: 51px;
+    }
+  
+    .pagamento-container .content .content-form form .containerMobile {
+      margin-top: 4px;
+    }
+    
+  
+    .pagamento-container .content .content-form form .input-container + .input-container{ 
+  
+      margin-top: 12px;
+    }
+  
+    .pagamento-container .content form .input-group {
+      margin-top: 9px; 
+    }
+    .pagamento-container .content .content-form form .input-group .input-container{ 
+  
+      margin-top: 5px;
+    }
+  
+    .pagamento-container .content .content-form form .last-container{ 
+  
+      margin-top: 20px;
+    } 
+  
+    .pagamento-container .content form .input-group .valInput{
+    
+      width: 126px;
+      margin-right: 13px;
+    }
+  
+    .pagamento-container .content form select{
+  
+      width: 273px;
+         
+    }
+    .labelError{
+      
+      font: 400 11px Verdana, sans-serif;
+      
+  
+    }
+  
+    input,
+    label {
+      height: 52px;   
+      
+    }
+    input:valid + label,
+    input:focus-within + label {
+      color: #C9C9C9;
+      font-size: .8rem;
+      top: -24px;
+      /* pointer-events: none; */
+    }
+    
+  }

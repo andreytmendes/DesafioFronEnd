@@ -1,0 +1,28 @@
+.logon-contender{
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logon-contender section {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logon-contender section form{
+
+    margin-top: 100px;
+}
+
+.logon-contender section form h1{
+
+    font-size: 32px;
+    margin-bottom: 32px;
+}
