@@ -1,5 +1,6 @@
 # DesafioFronEnd
 O Projeto contempla um sistema que simula um pagamento via cartão de crédito, e que consome uma REST API que guarda os dados do pagamento.
+Tendo também um layout Responsivo para Mobiles.
 
 ## Tecnologias Utilizadas
 * FronEnd feito com ReactJs Hooks 
@@ -36,16 +37,24 @@ npm start
 A aplicação vai abrir no seu Browser padrão.
 
 ## Uso da Aplicação 
-1. Pagina Efetue o Pagamento 
-   - Onde você vai digitar um valor para pagamento
-2. Pagamento
+1. Página Efetue o Pagamento 
+   - Onde você vai digitar um valor inteiro para o pagamento
+   ![Imagem Efetue Pagamento](https://github.com/andreytmendes/DesafioFronEnd/blob/master/Telas%20Aplica%C3%A7%C3%A3o/EfetuaPagamento.png)
+2. Página Pagamento
    - Onde será preenchido os dados do Cartão
-3. Pagamento Validação
+   ![Imagem Pagamento](https://github.com/andreytmendes/DesafioFronEnd/blob/master/Telas%20Aplica%C3%A7%C3%A3o/Pagamento.png)   
+3. Página Pagamento Preenchido
    - Os campos do Formulario são validados
-4. Pagamento CVV
+   ![Imagem Pagamento Preenchido](https://github.com/andreytmendes/DesafioFronEnd/blob/master/Telas%20Aplica%C3%A7%C3%A3o/PagamentoPreenchido.png)   
+4. Página Pagamento CVV
    - Onde enocontar o CVV
-5. Confirmação
+   ![Imagem Pagamento CVV](https://github.com/andreytmendes/DesafioFronEnd/blob/master/Telas%20Aplica%C3%A7%C3%A3o/PagamentoCVV.png)
+5. Página Pagamento Validação
    - O pagamento é efetuado e então o usuario aguarda a autorização.
+   ![Imagem Pagamento Validacao](https://github.com/andreytmendes/DesafioFronEnd/blob/master/Telas%20Aplica%C3%A7%C3%A3o/PagamentoErro.png)
+6. Página Confirmação
+   - O pagamento é efetuado e então o usuario aguarda a autorização podendo efetuar um novo pagamento.
+   ![Imagem Pagamento Validacao](https://github.com/andreytmendes/DesafioFronEnd/blob/master/Telas%20Aplica%C3%A7%C3%A3o/Confirma%C3%A7%C3%A3o.png)
 
 
 ## Estrutura do Projeto e Informações técnicas
