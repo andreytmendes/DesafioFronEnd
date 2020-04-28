@@ -1,57 +1,40 @@
-.con select{
-    width: 150px;
-    height: 3rem;
-    font-size: 1rem;
-
-	border: 0px solid #C9C9C9e6;
-    border-radius: 0px;
-    border-bottom: 1px solid #C9C9C9e6;
-	
-	outline: none;
-    transition: .2s ease-in-out;
-    box-sizing: border-box;
-
-	float:left;
-
-    -webkit-appearance:none;
+.content-confirm{
+    width: 647px;  
+    height: 100vh;
+    margin-top: 43px;
+    padding-top: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
     
-	background:url('../../assets/Arrow.png');
-	background-repeat:no-repeat;
-	 background-size:16px 17px; 
-    background-position:right 0px;
-    
-    /* width:150px;
-    border:1px solid #ccc */
+ }
 
+ .content-confirm h1{
+ margin: 0pc;
 }
 
+.content-confirm h2{
+    margin: 5pc;
+   }
 
-.con{
+.content-confirm button{
+    width: 232px;
+    height: 48px;
 
-    /* overflow-x: hidden;
-    overflow-y: auto;
-    height: 200px;
-    width: 150px;
-    size: 10px; */
+    background:#DE4B4B;
+    border: 0;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font: 500 17px SFProTextRegular;
+    font-weight: 400;
+    margin-top: 55px;
+    display: block;   
 
-
-
-
-    height: 150px;
-
-    width: 150px;
- }
- /* .wrapper .selection{
-   width:150px;
-   border:1px solid #ccc
- } */
-
- .content{
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
-
- .content hi{
- margin: 10pc;
+}
+.content-confirm p{
+    margin: 5px;
+    font: 500 17px SFProTextRegular;
 }

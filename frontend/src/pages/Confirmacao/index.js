@@ -1,99 +1,53 @@
 import React from 'react';
 
+
 import './styles.css'
+
+import {useHistory} from 'react-router-dom';
 
 function Confirmacao() {
 
-  // const [items, setItems] = React.useState([]);
+  const crypto = require('crypto');
 
-  const [itemss, setItemss] = React.useState([]);
+  const id = crypto.randomBytes(8).toString('HEX');
 
-  const addItem = () => {
-    setItemss([
-      ...itemss,
-      {
-        id: itemss.length,
-        value: 'f'
-      }
-    ]);
-  };
+  const history = useHistory();
 
-  const [loading, setLoading] = React.useState(true);
+  async function handleNewPayment(e){
 
+    e.preventDefault();
 
-  const [items, setItems] = React.useState([
-    { label: "Loading ...", value: "" }
-  ]);
+    try {  
+      
+      history.push('/');
 
-  const [value, setValue] = React.useState(
-    "R2-D2"
-  );
+    } catch (err) 
+    {
+        alert('Falha ao Tentar efetuar novo pagamento');
+    } 
 
-  React.useEffect(() => {
-
-    let unmounted = false;
-
-    async function getCharacters() {
-
-      const response = await fetch("https://pokeapi.co/api/v2/pokemon/");
-      const body = await response.json();
-      if (!unmounted) {
-        setItems(body.results.map(({ name }) => ({ label: name, value: name })));
-  
-        setLoading(false);
-      }
-
-    }
-    getCharacters();
-    return () => {
-      unmounted = true;
-    };
-  }, []);
-
-
-  // const [items] = React.useState([
-  //   {
-  //     label: "Luke Skywalker",
-  //     value: "Luke Skywalker"
-  //   },
-  //   { label: "C-3PO", value: "C-3PO" },
-  //   { label: "R2-D2", value: "R2-D2" }
-  // ]);
-
-  
+}
   
   return (    
       
-      <div className="content">
-        <hi className="pag">Confirmacao </hi>
-          <div className="con">
-              <select  disabled={loading} value={value}
-              onChange={e => setValue(e.currentTarget.value)} >
-              {items.map(({ label, value }) => (
-                    <option key={value} value={value}>
-                      {label}
-                    </option>
-                  ))}
-              </select>
+      <div className="content-confirm">
+        <h1 >Confirmação</h1>
 
-              
+          <h2> NÚMERO DA SOLICITAÇÂO : {id}</h2>
+          
+          <p>Seu pagamento foi solicitado com sucesso</p>
+          <p>Assim que for autorizado entraremos em contato</p>
+          <p>Obrigado</p>
 
-          </div>
+          <button 
+          className="buttonNew" 
+          type="submit" 
+          value="block" 
+          onClick={handleNewPayment}
+          >Novo Pagamento</button>
+            
 
-          <button onClick={addItem}>Add a number</button>
-
-
-
-
-          <ul>
-            {itemss.map(itemss => (
-              <li key={itemss.id}>{itemss.value}</li>
-            ))}
-          </ul>       
-   
-
-      </div>   
-     
+      </div>       
 
   );
 }

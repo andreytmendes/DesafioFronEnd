@@ -27,7 +27,7 @@ function Carrinho() {
         history.push('/pagamento');
 
       } catch (err) {
-          alert('Falha ao Tenatar efetuar o pagamento');
+          alert('Falha ao Tentar efetuar o pagamento');
       } 
 
   }
@@ -48,7 +48,7 @@ function Carrinho() {
               type="number"
               name="name"
               size={7}
-              placeholder="Digite um valor para pagamento"
+              placeholder="Digite um valor para o pagamento"
             />
 
             <button className="button" type="submit" value="block" >Pagar</button>

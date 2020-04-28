@@ -7,6 +7,9 @@ import {Link,useHistory} from 'react-router-dom'
 import './styles.css'
 import './stylesResponsive.css'
 
+//Importa API
+import api from '../../services/api.js'
+
 //Importa Incones e imagens do projeto
 import {FiChevronLeft,FiChevronRight}from 'react-icons/fi';
 import {MdInfo}from 'react-icons/md';
@@ -142,7 +145,31 @@ function Pagamento()  {
           }
           else{
 
-            history.push('/confirmacao');
+            
+            const pos = valueinstallment.indexOf('s')-6;
+
+            const dataApi ={
+              paymentamount : valuePayment,
+              cardnumber : onNumberCard,
+              namecard: onName,
+              validdate : onDate,
+              cvvcode: onCVV,
+              numberinstallments :  valueinstallment.substr(0,2),
+              amountinstallments : valueinstallment.substr(6,pos),
+              approvalstatus : "Aguardando"
+
+            }
+
+            const response = await api.post('pagar',dataApi);
+
+            if (response.statusText === "OK")
+            {
+              history.push('/confirmacao');
+            }else{
+              alert('Erro ao inserir dados no banco de Dados.');
+            }
+
+            
 
           }             
 
@@ -198,7 +225,7 @@ function Pagamento()  {
 
         for(let i=1; i<13; i++){
 
-          var installments = i.toString()+'x '+'R$'+(parseFloat(valuePayment/i).toFixed(2)).toString()+' sem juros';
+          var installments = (i< 10 ? "0"+(i.toString()) : i.toString())+'x '+'R$'+(parseFloat(valuePayment/i).toFixed(2)).toString()+' sem juros';
 
           const newItemObj = {label:installments.replace('.',','),valueinstallment:installments.replace('.',',')}
 
