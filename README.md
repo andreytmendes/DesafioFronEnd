@@ -27,7 +27,7 @@ Abra seu terminal de comando (Ex: PowerShell, CMD) em modo administrador e execu
 ```
 npm start
 ```
-Assim o servicor da APi REST ficara no para que o Front possa consumir.
+Assim o servidor da APi REST ficara no ar para que o Front possa consumir na rota http://localhost:3333/pagar .
 
 Ainda no terminal de comando (Ex: PowerShell, CMD) em modo administrador e execute o comando dentro da pasta FrontEnd do projeto :
 ```
@@ -74,6 +74,7 @@ A aplicação vai abrir no seu Browser padrão.
   - Dentro da pasta **src** existe um arquivo css **global.css** que contém os estilos que serão usados pela aplicação em todas as paginas.
   - Dentro da pasta **src** existe o arquivo **App.js** que importa todas a rotas das páginas.
   - Dentro da pasta **src** existe o arquivo **index.js** que é responsável por renderizar as páginas.
+  - Dentro da pasta **src** existe a pasta **services** que armazena o aquivo **api.js** que contem a conexão da api para consumirmos na aplicação
   - Dentro da pasta **src** existe a pasta **pages** que armazena todas a páginas da aplicação e dentro das pastas de cada página existe 
     um arquivo **index.js** que contém o HTML da página e suas funções, e um arquivo css **styles.css** que contém os estilos par-
     ticulares da pagina.
