@@ -1,7 +1,5 @@
 import React from 'react';
 
-//import CurrencyInput from './CurrencyInput'
-
 import './styles.css'
 
 import {useHistory} from 'react-router-dom';
@@ -50,7 +48,7 @@ function Carrinho() {
               type="number"
               name="name"
               size={7}
-              placeholder="Digiteo valor"
+              placeholder="Digite um valor para pagamento"
             />
 
             <button className="button" type="submit" value="block" >Pagar</button>
