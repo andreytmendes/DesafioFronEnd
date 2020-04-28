@@ -23,12 +23,30 @@ npm -v
 feito isso você estará pronto para executar o projeto.
 
 ## Iniciando o projeto
-Abra seu terminal de comando (Ex: PowerShell, CMD) em modo administrador e execute dentro da pasta FrontEnd do projeto o comando:
+Abra seu terminal de comando (Ex: PowerShell, CMD) em modo administrador e execute o comando dentro da pasta BackEnd do projeto :
 ```
 npm start
 ```
+Assim o servicor da APi REST ficara no para que o Front possa consumir.
 
-desta forma você consegue visualizar o sistema 
+Ainda no terminal de comando (Ex: PowerShell, CMD) em modo administrador e execute o comando dentro da pasta FrontEnd do projeto :
+```
+npm start
+```
+A aplicação vai abrir no seu Browser padrão.
+
+## Uso da Aplicação 
+1. Pagina Efetue o Pagamento 
+   - Onde você vai digitar um valor para pagamento
+2. Pagamento
+   - Onde será preenchido os dados do Cartão
+3. Pagamento Validação
+   - Os campos do Formulario são validados
+4. Pagamento CVV
+   - Onde enocontar o CVV
+5. Confirmação
+   - O pagamento é efetuado e então o usuario aguarda a autorização.
+
 
 ## Estrutura do Projeto e Informações técnicas
 * BACKEND
